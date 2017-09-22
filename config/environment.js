@@ -25,7 +25,7 @@ module.exports = function(environment) {
       projectId: "message-board-eafa1",
       storageBucket: "message-board-eafa1.appspot.com",
       messagingSenderId: "166570355593"
-    }
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
