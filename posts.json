@@ -1,12 +1,15 @@
 { "posts": [{
+    "title": "Just to check up on you",
     "author": "Henry Java",
     "question": "How are you?",
     "notes": "I just want to know"
   }, {
+    "title": "I am trying to find myself",
     "author": "Richard Angular",
     "question": "I am trying to understand my last name. Could you explain MVC's to me?",
     "notes": "Very urgent"
   }, {
+  "title": "Confirmation: I'd like to know who's better",
   "author": "Victor Ember",
   "question": "Whenever Richard and I want to start a new project, we have a dilemma. Who's better between the two of us?",
   "notes": "Take your time"
