@@ -13,6 +13,7 @@ export default Ember.Component.extend({
 
     savePost() {
       var params = {
+        title: this.get('title'),
         author: this.get('author'),
         question: this.get('question'),
         notes: this.get('notes'),
