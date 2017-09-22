@@ -1,0 +1,17 @@
+{
+  "name": "message-board",
+  "description": "Small description for message-board goes here",
+  "main": "",
+  "authors": [
+    "Gitu Mbugua <gmbugua38@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
