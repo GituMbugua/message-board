@@ -1,3 +1,9 @@
 <h3>{{post.title}}</h3>
 <p>{{post.question}}</p>
 <p>{{post.notes}}</p>
+
+<ul>
+  {{#each post.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
