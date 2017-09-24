@@ -7,6 +7,9 @@ export default Ember.Component.extend({
     editPostForm() {
       this.set('editPostForm', true);
     },
+    cancel() {
+      this.set('editPostForm', false);
+    },
     edit(post) {
       var params = {
         title: this.get('title'),
