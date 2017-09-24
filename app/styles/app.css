@@ -1,0 +1,15 @@
+.navbar {
+  font-family: 'prosto one', cursive;
+  background: black;
+  color: white;
+}
+
+#home  {
+  float: bottom;
+  color: white;
+  font-size: 15px;
+}
+
+li {
+  list-style: none;
+}
