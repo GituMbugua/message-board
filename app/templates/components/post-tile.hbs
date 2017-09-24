@@ -1,5 +1,4 @@
 <li>
-  <h4>{{post.title}}</h4>
+  {{#link-to 'post' post.id}}<h4>{{post.title}}</h4>{{/link-to}}
   <h6>~{{post.author}}</h6>
-{{edit-post post=post edit="edit"}}
 </li>
