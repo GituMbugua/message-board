@@ -4,9 +4,9 @@
 
 <h3>Questions:</h3>
 <ul>
-  {{#each model as |post|}}
+  {{#each model.posts as |post|}}
     {{post-tile post=post}}
   {{/each}}
 </ul>
 
-{{new-post savePost="savePost" }}
+{{new-post savePost="savePost"}}
