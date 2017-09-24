@@ -13,5 +13,12 @@
   "author": "Victor Ember",
   "question": "Whenever Richard and I want to start a new project, we have a dilemma. Who's better between the two of us?",
   "notes": "Take your time"
+  }],
+  "answers": [{
+    "author": "Jack",
+    "answer": "I'm doing fine" 
+  }, {
+    "author": "Fred",
+    "answer": "It's a long story...let's talk sometime"
   }]
-}
+} 
