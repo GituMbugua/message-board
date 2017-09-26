@@ -1,30 +1,30 @@
 {{#if editPostForm}}
+  <div class="well">
   <h2>Edit Question</h2>
-  <div class="col-md-6">
     <form>
       <div class="form-group">
         <label for="author">Name</label>
-        {{input value=post.author id="author" placeholder=post.author}}
+        {{input class="form-control" value=post.author id="author" placeholder=post.author}}
       </div>
 
       <div class="form-group">
         <label for="title">Topic of question</label>
-        {{input value=post.title id="title" placeholder=post.title}}
+        {{input class="form-control" value=post.title id="title" placeholder=post.title}}
       </div>
 
       <div class="form-group">
         <label for="question">Question</label>
-        {{textarea value=post.question id="question" placeholder=post.question}}
+        {{textarea class="form-control" value=post.question id="question" placeholder=post.question}}
       </div>
 
       <div class="form-group">
         <label for="notes"Additional >Notes</label>
-        {{textarea value=post.notes id="notes" placeholder=post.notes}}
+        {{textarea class="form-control" value=post.notes id="notes" placeholder=post.notes}}
       </div>
       <a class="btn btn-dark" {{action 'cancel'}}>Cancel</a>
       <button class="btn btn-success" type="submit" {{action 'edit' post}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'editPostForm'}}>Edit Question</button>
+  <button class="btn btn-warning" {{action 'editPostForm'}}>Edit Question</button>
 {{/if}}

@@ -1,12 +1,14 @@
-<h4>This is a question and answer message board where you can pose any question.
-  Read the questions below and feel free to ask any of your own.
-</h4>
-
-<h3>Questions:</h3>
-<ul>
-  {{#each model.posts as |post|}}
-    {{post-tile post=post}}
-  {{/each}}
-</ul>
-
-{{new-post savePost="savePost"}}
+<div class="container-fluid">
+  <h3 id="indexText">This is a question and answer message board where you can pose any question.
+    Read the questions below and feel free to ask any of your own. 
+  </h3>
+   <span id="addButton">{{new-post savePost="savePost"}}</span>
+</div>
+<br>
+<div class="row">
+  <ul>
+    {{#each model.posts as |post|}}
+      {{post-tile post=post}}
+    {{/each}}
+  </ul>
+</div>
