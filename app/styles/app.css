@@ -1,7 +1,26 @@
-.navbar {
-  font-family: 'prosto one', cursive;
-  background: black;
+body {
+  background: #195658;
+}
+
+#indexText {
   color: white;
+}
+
+.navbar {
+  border-radius: 0;
+  padding: 2%;
+  font-family: 'archivo black', sans-serif;
+  font-size: 24px;
+}
+
+#headerText {
+  font-size: 35px;
+}
+
+#navPill {
+  float: right;
+  color: black;
+  margin: auto;
 }
 
 #home  {
@@ -12,4 +31,19 @@
 
 li {
   list-style: none;
+}
+
+.well {
+  border: none;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+#authorName {
+  color: white;
+  text-align: center;
+  margin-bottom: 1%;
+
 }
