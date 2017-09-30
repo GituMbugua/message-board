@@ -53,4 +53,4 @@ Gitu Mbugua
 
 
 ### License
-[LICENSE](MIT)
+[LICENSE](./LICENSE)
