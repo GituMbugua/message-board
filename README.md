@@ -1,49 +1,22 @@
-# message-board
+# Message Board
+##### _~by Gitu Mbugua_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+### Description 
+This web app is a forum where users can post questions and get answers from other users.
+The user can also answer other questions posted by someone else. The user can add their favorite answers to 
+a list if they wish to refer later.
 
-## Prerequisites
+#### Prerequisites
 
-You will need the following things properly installed on your computer.
+You will need the following things properly installed on your computer to use this app.
 
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
 
-## Installation
-
-* `git clone <repository-url>` this repository
-* `cd message-board`
-* `npm install`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+#### Bugs
+There are no known bugs in this app.
 
 ### License
 [LICENSE](MIT)
