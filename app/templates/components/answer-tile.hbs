@@ -1,5 +1,11 @@
   <li>
-    <h4>{{answer.author}}{{#if answer.inFavorites}}<span class="glyphicon glyphicon-heart added" data-toggle="tooltip" title="Already added to favorites"></span>{{else}}<span class="glyphicon glyphicon-heart" {{action 'addToFavorites' answer}}></span>{{/if}}</h4>
+    <h4>{{answer.author}}
+      {{#if answer.inFavorites}}
+      <span class="glyphicon glyphicon-heart added" data-toggle="tooltip" title="Already added to favorites"></span>
+      {{else}}
+      <span class="glyphicon glyphicon-heart" data-toggle="tooltip" title="Click to add to favorites"{{action 'addToFavorites' answer}}></span>
+      {{/if}}
+    </h4>
     <p>{{answer.answer}}<em id="timestamp">{{moment-from-now (now interval=1000)}}</em></p>
   </li>
   <hr>
