@@ -11,6 +11,15 @@ export default Ember.Component.extend({
       };
       this.set('editPostForm', false);
       this.sendAction('edit', post, params);
+    },
+
+    saveAnswer(post) {
+      var params = {
+        author: this.get('author'),
+        answer: this.get('answer'),
+        post: this.get('post')
+      };
+      this.sendAction('saveAnswer', post, params);
     }
   }
 });
