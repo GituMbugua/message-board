@@ -97,6 +97,7 @@ li {
 
 .glyphicon-heart {
   float: right;
+  font-size: 25px;
 }
 .glyphicon-heart:hover {
   color: #EB0101;
