@@ -1,7 +1,27 @@
-body {
-  background: #195658;
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  background: #195658;
+  font-family: 'anonymous pro', monospace;
+  font-size: 20px;
+}
+
+#outlet-body {
+  position: relative;
+  height: 100%;
+}
 #indexText {
   color: white;
 }
@@ -13,11 +33,16 @@ body {
   font-size: 24px;
 }
 
-#headerText {
-  font-size: 35px;
+#header-text {
+  font-size: 30px;
+  color: black;
+}
+#header-text:hover {
+  color: #1C2C41;
+  text-decoration: none;
 }
 
-#navPill {
+.nav-pills {
   float: right;
   color: black;
   margin: auto;
@@ -29,6 +54,15 @@ body {
   font-size: 15px;
 }
 
+.well.new-post {
+  margin-right: 11.5%;
+}
+
+#nav-heart {
+  font-size: 40px;
+  margin-left: 1%;
+}
+
 li {
   list-style: none;
 }
@@ -38,12 +72,51 @@ li {
   background: white;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 75%;
 }
 
-#authorName {
+#answers {
+  color: white;
+  text-align: center;
+}
+
+#page-title {
   color: white;
   text-align: center;
   margin-bottom: 1%;
 
+}
+
+#timestamp {
+  float: right;
+}
+
+.special-icon {
+  float: right;
+}
+
+.glyphicon-heart {
+  float: right;
+  font-size: 25px;
+}
+.glyphicon-heart:hover {
+  color: #EB0101;
+}
+
+.glyphicon-heart.added {
+  color: #EB0101;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+    background-color: #f5f5f5;
+}
+
+.footer h5 {
+  text-align: center;
+  margin-top: 1%;
 }

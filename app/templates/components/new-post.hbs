@@ -1,5 +1,5 @@
 {{#if addNewPost}}
-  <div class="well">
+  <div class="well new-post">
   <h2>Post a Question</h2>
     <form>
       <div class="form-group">
@@ -21,7 +21,7 @@
         <label for="notes">Additional Notes</label>
         {{textarea class="form-control" value=notes id="notes"}}
       </div>
-      <a class="btn btn-dark" {{action 'cancel'}}>Cancel</a>
+      <button class="btn btn-dark" {{action 'cancel'}}>Cancel</button>
       <button class="btn btn-success" type="submit" {{action 'savePost'}}>Save</button>
     </form>
   </div>

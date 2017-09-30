@@ -1,11 +1,19 @@
-<div class="well well-default">
+<div class="well">
   <h3>{{post.title}}</h3>
+  <hr>
   <p>{{post.question}}</p>
-  <p>{{post.notes}}</p>
+  <p><em><sup>*</sup>{{post.notes}}</em></p>
+  {{edit-post post=post edit="edit"}}
 </div>
+<br>
+<br>
 
-<ul>
-  {{#each post.answers as |answer|}}
-    {{answer-tile answer=answer}}
-  {{/each}}
-</ul>
+<h2 id="answers">Answers</h2>
+<div class="well">
+  <ul>
+    {{#each post.answers as |answer|}}
+      {{answer-tile answer=answer}}
+    {{/each}}
+  </ul>
+  {{new-answer saveAnswer="saveAnswer" post=post}}
+</div>
