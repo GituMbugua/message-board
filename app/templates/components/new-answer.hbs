@@ -1,6 +1,6 @@
 {{#if addNewAnswer}}
-<h1>Answer</h1>
-  <div>
+  <div class="well">
+    <h1>Answer</h1>
     <form>
       <div class="form-group">
         <label for="author">Name</label>
@@ -10,6 +10,7 @@
         <label for="answer">Answer</label>
         {{input value=answer id="answer"}}
       </div>
+      <button class="btn btn-dark" {{action 'cancel'}}>Cancel</button>
       <button class="btn btn-success" {{action 'saveAnswer'}}>Save</button>
     </form>
   </div>
