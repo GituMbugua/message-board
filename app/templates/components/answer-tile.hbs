@@ -1,7 +1,5 @@
-<div class="well">
   <li>
-    <h3>{{answer.author}}</h3>
-    <p>{{answer.answer}}</p>
+    <h4>{{answer.author}}<span class="glyphicon glyphicon-heart" {{action 'addToFavorites' answer}}></span></h4>
+    <p>{{answer.answer}}<em id="timestamp">{{moment-from-now (now interval=1000)}}</em></p>
   </li>
   <hr>
-</div>
