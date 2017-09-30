@@ -33,12 +33,16 @@ body {
   font-size: 24px;
 }
 
-#header-text link-to {
-  font-size: 35px;
+#header-text {
+  font-size: 30px;
   color: black;
 }
+#header-text:hover {
+  color: #1C2C41;
+  text-decoration: none;
+}
 
-#navPill {
+.nav-pills {
   float: right;
   color: black;
   margin: auto;
@@ -48,6 +52,10 @@ body {
   float: bottom;
   color: white;
   font-size: 15px;
+}
+
+.well.new-post {
+  margin-right: 11.5%;
 }
 
 #nav-heart {
@@ -72,7 +80,7 @@ li {
   text-align: center;
 }
 
-#authorName {
+#page-title {
   color: white;
   text-align: center;
   margin-bottom: 1%;
@@ -94,6 +102,9 @@ li {
   color: #EB0101;
 }
 
+.glyphicon-heart.added {
+  color: #EB0101;
+}
 
 .footer {
   position: absolute;
