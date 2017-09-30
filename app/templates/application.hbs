@@ -1,10 +1,11 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header row">
-      <h2 id="header-text">{{#link-to 'index'}}Q & A Message Board{{/link-to}}</h2>
+      {{#link-to 'index'}}<h2 id="header-text">Q & A Message Board</h2>{{/link-to}}
     </div>
     <ul class="nav nav-pills">
-      <span id="nav-heart" class="glyphicon glyphicon-heart">{{#link-to 'favorite'}}Favorites{{/link-to}}</span> <li id="navPill">{{#link-to 'index'}}Home{{/link-to}}</li>
+      <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+      <li>{{#link-to 'favorite'}}Favorites{{/link-to}}</li>
     </ul>
     
   </div>
