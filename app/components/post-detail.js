@@ -12,11 +12,12 @@ export default Ember.Component.extend({
       this.set('editPostForm', false);
       this.sendAction('edit', post, params);
     },
-
-    deleteAnswer(answer) {
-      this.sendAction('deleteAnswer', answer);
+    delete(post) {
+      if (confirm('Are you sure you want to delete this question? Deleting it will delete all its answers with it.' )) {
+        this.sendAction('deleteQuestion', post);
+      }
     },
-
+    
     saveAnswer(post) {
       var params = {
         author: this.get('author'),
@@ -24,6 +25,9 @@ export default Ember.Component.extend({
         post: this.get('post')
       };
       this.sendAction('saveAnswer', post, params);
-    }
+    },
+    deleteAnswer(answer) {
+      this.sendAction('deleteAnswer', answer);
+    },
   }
 });

@@ -1,5 +1,5 @@
 <div class="well">
-  <h3>{{post.title}}</h3>
+  <h3>{{post.title}}<span class="glyphicon glyphicon-trash big"{{action 'delete' post}} data-toggle="tooltip" title="Delete question"></span></h3>
   <hr>
   <p>{{post.question}}</p>
   <p><em><sup>*</sup>{{post.notes}}</em></p>
