@@ -29,24 +29,18 @@ You will need the following things properly installed on your computer to use th
 
 ### Running / Development
 
-```
 * `ember serve`
 * Visit the app at [http://localhost:4200](http://localhost:4200).
-```
 
 ### Running Tests
 
-```
 * `ember test`
 * `ember test --server`
-```
 
 ### Building
 
-```
 * `ember build` (development)
 * `ember build --environment production` (production)
-```
 
 ### Author
 Gitu Mbugua
