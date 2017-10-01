@@ -94,6 +94,33 @@ li {
 .special-icon {
   float: right;
 }
+.special-icon:hover {
+  font-size: 26px;
+}
+
+.glyphicon-trash.big {
+  float: right;
+  margin-right: 1%;
+}
+.glyphicon-trash.big:hover {
+  font-size: 26px;
+}
+.glyphicon-trash.big:active {
+  font-size: 24px;
+}
+
+.glyphicon-trash.answer {
+  float: right;
+  font-size: 20px;
+  margin-left: 1%;
+}
+.glyphicon-trash.answer:hover {
+  font-size: 23px;
+  transition: ease-in-out;
+}
+.glyphicon-trash.answer:active {
+  font-size: 20px;
+}
 
 .glyphicon-heart {
   float: right;
@@ -105,6 +132,7 @@ li {
 
 .glyphicon-heart.added {
   color: #EB0101;
+  pointer-events: none;
 }
 
 .footer {
