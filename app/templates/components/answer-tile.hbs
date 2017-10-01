@@ -1,13 +1,13 @@
   <li>
     <h4>{{answer.author}}
-      <span class="glyphicon glyphicon-trash"{{action 'delete' answer}}></span>
+      <span class="glyphicon glyphicon-trash answer"{{action 'delete' answer}} data-toggle="tooltip" title="Delete answer"></span>
       {{#if answer.inFavorites}}
       <span class="glyphicon glyphicon-heart added" data-toggle="tooltip" title="Already added to favorites"></span>
       {{else}}
       <span class="glyphicon glyphicon-heart" data-toggle="tooltip" title="Click to add to favorites"{{action 'addToFavorites' answer}}></span>
       {{/if}}
     </h4>
-    <p>{{answer.answer}}<em id="timestamp">{{moment-from-now (now interval=1000)}}</em></p>
+    <p>{{answer.answer}}<em id="timestamp">{{moment-format answer.createdAt 'MMMM D, YYYY h:mm A'}}</em></p>
   </li>
   <hr>
 
