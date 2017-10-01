@@ -13,6 +13,10 @@ export default Ember.Component.extend({
       this.sendAction('edit', post, params);
     },
 
+    deleteAnswer(answer) {
+      this.sendAction('deleteAnswer', answer);
+    },
+
     saveAnswer(post) {
       var params = {
         author: this.get('author'),

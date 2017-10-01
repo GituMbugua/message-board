@@ -12,7 +12,7 @@
 <div class="well">
   <ul>
     {{#each post.answers as |answer|}}
-      {{answer-tile answer=answer}}
+      {{answer-tile answer=answer deleteAnswer="deleteAnswer"}}
     {{/each}}
   </ul>
   {{new-answer saveAnswer="saveAnswer" post=post}}

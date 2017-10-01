@@ -1,5 +1,6 @@
   <li>
     <h4>{{answer.author}}
+      <span class="glyphicon glyphicon-trash"{{action 'delete' answer}}></span>
       {{#if answer.inFavorites}}
       <span class="glyphicon glyphicon-heart added" data-toggle="tooltip" title="Already added to favorites"></span>
       {{else}}

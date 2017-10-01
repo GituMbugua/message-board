@@ -6,6 +6,12 @@ export default Ember.Component.extend({
   actions: {
     addToFavorites(item) {
       this.get('favorites').add(item);
+    },
+
+    delete(answer) {
+        if (confirm('Are you sure you want to delete this answer?')) {
+          this.sendAction('deleteAnswer', answer);
+        }
+      }
     }
-  }
 });
