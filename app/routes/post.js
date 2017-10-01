@@ -14,6 +14,15 @@ export default Ember.Route.extend({
       post.save();
       this.transitionTo('index');
     },
+    deleteQuestion(post) {
+      var answer_deletions = post.get('answers').map(function(answer) {
+        return answer.destroyRecord();
+      });
+      Ember.RSVP.all(answer_deletions).then(function() {
+        return post.destroyRecord();
+      });
+      this.transitionTo('index');
+    },
 
     saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
@@ -24,7 +33,6 @@ export default Ember.Route.extend({
       });
       this.transitionTo('post', post);
     },
-
     deleteAnswer(answer) {
       answer.destroyRecord();
       this.transitionTo('post', post.id)
